@@ -34,9 +34,7 @@ end
   
   def winner?(board)
     if won?(board)
-      return "X"
-    elsif winner?(board, 'O', win_combo)  
-       return "O"    
+       winner(board) == "X" || winner(board) == "O" 
     else 
       return nil
     end 
