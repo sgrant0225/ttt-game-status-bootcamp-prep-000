@@ -33,9 +33,7 @@ end
   end  
   
   def winner?(board)
-    winner == WIN_COMBINATIONS
-    WIN_COMBINATIONS.detect do |win_combo|
-    if winner?(board, 'X', win_combo) 
+    if won?(board)
       return "X"
     elsif winner?(board, 'O', win_combo)  
        return "O"    
