@@ -33,6 +33,7 @@ end
   end  
   
   def winner?(board)
+    winner == WIN_COMBINATIONS
     WIN_COMBINATIONS.detect do |win_combo|
     if winner?(board, 'X', win_combo) 
       return "X"
