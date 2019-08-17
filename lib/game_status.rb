@@ -33,8 +33,8 @@ end
   end  
   
   def winner?(board)
-       winner(board) == "X" || winner(board) == "O" 
-       if won?(board)
+      winner(board) == "X" || winner(board) == "O" 
+    if won?(board)
          return winner
     else 
       return nil
